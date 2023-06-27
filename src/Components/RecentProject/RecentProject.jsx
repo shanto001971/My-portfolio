@@ -7,33 +7,26 @@ const RecentProject = () => {
         <div className="lg:mt-44">
             <div className="text-center">
                 <h1 className="text-4xl font-serif">Recent Project</h1>
+                <hr className="w-1/2 mx-auto mt-5 "/>
             </div>
             
-            <div className="mt-10">
+            <div className="mt-20">
             <Carousel showArrows={true} >
                 <div>
-                    <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp" />
-                    <p className="legend">Legend 1</p>
+                    <img src="../../../public/Slider1.png" />
+                   
                 </div>
                 <div>
-                    <img src="assets/2.jpeg" />
+                    <img src="../../../public/Slider2.png" />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src="assets/3.jpeg" />
+                    <img src="../../../public/Slider3.png" />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
-                    <img src="assets/4.jpeg" />
+                    <img src="../../../public/Slider4.png" />
                     <p className="legend">Legend 4</p>
-                </div>
-                <div>
-                    <img src="assets/5.jpeg" />
-                    <p className="legend">Legend 5</p>
-                </div>
-                <div>
-                    <img src="assets/6.jpeg" />
-                    <p className="legend">Legend 6</p>
                 </div>
             </Carousel>
             </div>
