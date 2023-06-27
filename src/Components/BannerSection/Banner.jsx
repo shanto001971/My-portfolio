@@ -32,7 +32,7 @@ const Banner = () => {
                     <img className="w-16" src="../../../public/crown.png" alt="" />
                     <h1 className="text-2xl">web Developer</h1>
                 </div>
-                <div className="h-24 flex items-center gap-5 p-2 w-60 bg-slate-200 rounded-lg absolute top-80">
+                <div className="h-24 flex items-center gap-5 p-2 w-60 bg-slate-200 rounded-lg absolute lg:-left-20 lg:bottom-24 bottom-96">
                     <img className="w-16" src="../../../public/thumbup.png" alt="" />
                     <h1 className="text-2xl">Best Design Award</h1>
                 </div>
