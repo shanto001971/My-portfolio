@@ -4,18 +4,19 @@ import Home from "../Components/Home/Home";
 import MyProject from "../Components/MyProject/MyProject";
 
 export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <LayOut/>,
-      children:[
-        {
-          path:'/',
-          element:<Home/>
-        },
-        {
-          path:'/myProject',
-          element:<MyProject/>
-        },
-      ]
-    },
-  ]);
+  {
+    path: "/",
+    element: <LayOut />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/myProject',
+        element: <MyProject />,
+        loader: () => fetch('http://localhost:5000/project')
+      },
+    ]
+  },
+]);
