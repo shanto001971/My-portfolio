@@ -1,6 +1,5 @@
 import Banner from "../BannerSection/Banner";
 import ContactInfo from "../ContactInfo/ContactInfo";
-import Footer from "../Footer/Footer";
 import Intro from "../IntroSection/Intro";
 import MyServices from "../MyServices/MyServices";
 import RecentProject from "../RecentProject/RecentProject";
@@ -16,7 +15,6 @@ const Home = () => {
             <SkillSection/>
             <RecentProject/>
             <ContactInfo/>
-            <Footer/>
         </div>
     );
 };

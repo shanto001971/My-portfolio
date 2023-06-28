@@ -36,9 +36,9 @@ const Banner = () => {
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed once, initially
-                        'Hi I am ....',
+                        'Hi, I am ....',
                         1000,
-                        'Hello I am ....',
+                        'Hello, I am ....',
                         1000,
                         'Hi dear, I am ....',
                         1000,
@@ -71,7 +71,7 @@ const Banner = () => {
                     <img className='  absolute top-10 lg:absolute lg:-top-11 lg:h-full lg:left-10 rotate-3' src="../../../public/boy.png" alt="" />
                 </div>
                 <img 
-                data-aos="fade-right"
+               data-aos="zoom-in-right"
                 data-aos-offset="200"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -83,7 +83,7 @@ const Banner = () => {
                     data-aos-delay="50"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
-                    className="flex items-center gap-5 p-2 w-60 bg-slate-200 rounded-lg  absolute top-0 right-0">
+                    className="flex items-center gap-5 p-2 w-60 bg-slate-200 rounded-lg  absolute top-0 right-5">
                     <img className="w-16" src="../../../public/crown.png" alt="" />
                     <h1 className="text-2xl">web Developer</h1>
                 </div>

@@ -4,7 +4,7 @@ AOS.init();
 
 const Intro = () => {
     return (
-        <div className="flex w-full mt-20 ml-16  lg:mt-96 lg:mx-96">
+        <div className="lg:flex  mt-20 ml-16  lg:mt-96 lg:mx-96">
             <div
              data-aos="fade-right"
              data-aos-offset="200"

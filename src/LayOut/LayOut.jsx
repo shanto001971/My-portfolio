@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import Footer from "../Components/Footer/Footer";
 
 
 
@@ -18,8 +19,8 @@ const LayOut = () => {
                         <div className="flex-1 px-2 mx-2 text-3xl font-serif">Rakibul islam</div>
                         <div className="flex-none hidden lg:block">
                             <ul className="menu menu-horizontal">
-                                <li><a>Home</a></li>
-                                <li><a>MY Project</a></li>
+                                <Link to='/'><li><a>Home</a></li></Link>
+                               <Link to='/myProject'><li><a>MY Project</a></li></Link>
                             </ul>
                             <button href="https://drive.google.com/file/d/12ryNGsbxtrXw8U-zJqGW9adbnsXk9eZL/view?usp=drive_link" className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
                                 <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
@@ -29,6 +30,7 @@ const LayOut = () => {
                         </div>
                     </div>
                     <Outlet />
+                    <Footer/>
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-3" className="drawer-overlay"></label>

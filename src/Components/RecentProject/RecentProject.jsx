@@ -7,6 +7,7 @@ const RecentProject = () => {
         <div className="lg:mt-44">
             <div className="text-center">
                 <h1 className="text-4xl font-serif">Recent Project</h1>
+                <p className="text-2xl font-sans">I have completed several projects, some of which are shown</p>
                 <hr className="w-1/2 mx-auto mt-5 "/>
             </div>
             

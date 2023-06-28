@@ -19,10 +19,10 @@ const SkillSection = () => {
                 </button>
             </div>
 
-            <div className="relative">
-                <img className="lg:w-full rotate-12 absolute" src="../../../public/Vector2.png" alt="" />
+            <div className="relative p-2">
+                <img className="lg:w-full rotate-10 absolute right-5" src="../../../public/Vector2.png" alt="" />
                 <img className="lg:w-full " src="../../../public/Vector1.png" alt="" />
-                <div className="w-72 h-72 bg-slate-100 rounded-full absolute top-24 left-32">
+                <div className="w-72 h-72 bg-slate-100 rounded-full absolute top-24 left-10">
                     <img
                         data-aos="fade-left"
                         data-aos-offset="200"
