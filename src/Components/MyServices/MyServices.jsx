@@ -46,7 +46,7 @@ const MyServices = () => {
                 data-aos-easing="ease-in-out"
                 
                 className="text-center w-72 rounded-xl p-2 border shadow-2xl lg:absolute -left-40 top-52 mx-auto ">
-                    <img className="mx-auto" src="../../../public/heartemoji.png" alt="" />
+                    <img className="mx-auto" src="https://i.ibb.co/K5PvSKf/heartemoji.png" alt="" />
                     <h1 className="text-xl font-serif">Design</h1>
                     <p>Tailwind,DaisyUI,AOS,Framer-Motion <br />React-awesome-reveal,React-spring </p>
                     <button className="w-36 mt-5 relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-md shadow-xl group hover:ring-1 hover:ring-purple-500">
@@ -62,7 +62,7 @@ const MyServices = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 className="text-center m-10 w-72 rounded-xl p-2 border shadow-2xl lg:absolute bottom-0 left-40 mx-auto">
-                    <img className="mx-auto" src="../../../public/glasses.png" alt="" />
+                    <img className="mx-auto" src="https://i.ibb.co/yQwB330/glasses.png" alt="" />
                     <h1 className="text-xl font-serif">Developer</h1>
                     <p>Html,Css,JavaScript<br />React,Node,Express </p>
                     <button className="w-36 mt-5 relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-md shadow-xl group hover:ring-1 hover:ring-purple-500">
@@ -78,7 +78,7 @@ const MyServices = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 className="text-center w-72 rounded-xl p-2 border shadow-2xl lg:absolute left-48 -bottom-80 mx-auto">
-                    <img className="mx-auto" src="../../../public/humble.png" alt="" />
+                    <img className="mx-auto" src="https://i.ibb.co/7RrsbGV/humble.png" alt="" />
                     <h1 className="text-xl font-serif">UI/UX</h1>
                     <p>Comfortable for <br />UI and UX design </p>
                     <button className="w-36 mt-5 relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-md shadow-xl group hover:ring-1 hover:ring-purple-500">

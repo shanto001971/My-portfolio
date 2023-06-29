@@ -58,17 +58,17 @@ const Banner = () => {
                 </a>
 
                 <div className="flex gap-7 mt-20 mb-10">
-                    <a href="https://github.com/shanto001971"><img className="w-16" src="../../../public/github.png" alt="" /></a>
-                    <a href="https://www.linkedin.com/in/rakibul-islam-a3982227b/"><img className="w-16" src="../../../public/linkedin.png" alt="" /></a>
-                    <a href=""><img className="w-16" src="../../../public/instagram.png" alt="" /></a>
+                    <a href="https://github.com/shanto001971"><img className="w-16" src="https://i.ibb.co/3fyvTJT/github.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/in/rakibul-islam-a3982227b/"><img className="w-16" src="https://i.ibb.co/qyp559Q/linkedin.png" alt="" /></a>
+                    <a href=""><img className="w-16" src="https://i.ibb.co/C170FtT/instagram.png" alt="" /></a>
 
                 </div>
             </div>
             <div className="lg:w-1/2 relative mt-20">
                 <div className="w-full h-screen">
-                    <img className=' absolute  right-4' src="../../../public/Vector1.png" alt="" />
-                    <img className='  absolute right-4' src="../../../public/Vector2.png" alt="" />
-                    <img className='  absolute top-10 lg:absolute lg:-top-11 lg:h-full lg:left-10 rotate-3' src="../../../public/boy.png" alt="" />
+                    <img className=' absolute  right-4' src="https://i.ibb.co/hcghJSj/Vector1.png" alt="" />
+                    <img className='  absolute right-4' src="https://i.ibb.co/KG8VbCb/Vector2.png" alt="" />
+                    <img className='  absolute top-10 lg:absolute lg:-top-11 lg:h-full lg:left-10 rotate-3' src="https://i.ibb.co/4PxdG71/boy.png" alt="" />
                 </div>
                 <img 
                data-aos="zoom-in-right"
@@ -76,7 +76,7 @@ const Banner = () => {
                 data-aos-delay="50"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                className="absolute -top-16 -left-10 w-1/3  lg:-top-20 lg:-left-52" src="../../../public/glassesimoji.png" alt="" />
+                className="absolute -top-16 -left-10 w-1/3  lg:-top-20 lg:-left-52" src="https://i.ibb.co/2SC4Rzq/glassesimoji.png" alt="" />
                 <div
                     data-aos="fade-left"
                     data-aos-offset="200"
@@ -84,7 +84,7 @@ const Banner = () => {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                     className="flex items-center gap-5 p-2 w-60 bg-slate-200 rounded-lg  absolute top-0 right-5">
-                    <img className="w-16" src="../../../public/crown.png" alt="" />
+                    <img className="w-16" src="https://i.ibb.co/4RGhSJ5/crown.png" alt="" />
                     <h1 className="text-2xl">web Developer</h1>
                 </div>
                 <div
@@ -94,7 +94,7 @@ const Banner = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 className="h-24 flex items-center gap-5 p-2 w-60 bg-slate-200 rounded-lg absolute lg:-left-20 lg:bottom-24 bottom-48">
-                    <img className="w-16" src="../../../public/thumbup.png" alt="" />
+                    <img className="w-16" src="https://i.ibb.co/5sbhqfW/thumbup.png" alt="" />
                     <h1 className="text-2xl">Best Design Award</h1>
                 </div>
             </div>

@@ -14,19 +14,19 @@ const RecentProject = () => {
             <div className="mt-20">
             <Carousel showArrows={true} >
                 <div>
-                    <img src="../../../public/Slider1.png" />
+                    <img src="https://i.ibb.co/CwHXhMB/Slider1.png" />
                    
                 </div>
                 <div>
-                    <img src="../../../public/Slider2.png" />
+                    <img src="https://i.ibb.co/QfmcJVp/Slider2.png" />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src="../../../public/Slider3.png" />
+                    <img src="https://i.ibb.co/jwzfQY7/Slider3.png" />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
-                    <img src="../../../public/Slider4.png" />
+                    <img src="https://i.ibb.co/mbQrGyw/Slider4.png" />
                     <p className="legend">Legend 4</p>
                 </div>
             </Carousel>
