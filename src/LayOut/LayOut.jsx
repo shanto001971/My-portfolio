@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { BsSun, BsFillMoonFill } from 'react-icons/Bs';
 
 
+
 const LayOut = () => {
     const [theme, setTheme] = useState(true)
     const [localTheme, setLocalTheme] = useState()
@@ -50,6 +51,7 @@ const LayOut = () => {
                             </button>
                         </div>
                     </div>
+                    
                     <Outlet />
                     <Footer />
                 </div>

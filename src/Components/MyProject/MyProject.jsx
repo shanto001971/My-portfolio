@@ -1,9 +1,23 @@
 import { useLoaderData } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
+import { useQuery } from "@tanstack/react-query";
+import FeedbackCard from "../FeedbackCard/FeedbackCard";
 
 
 const MyProject = () => {
-    const data = useLoaderData()
+    const FeedbackData = useLoaderData()
+    const { isLoading, data } = useQuery({
+        queryKey: ['feedbackData'],
+        queryFn: () =>
+            fetch('http://localhost:5000/project').then(
+                (res) => res.json(),
+            ),
+    })
+    // console.log(feedbackData)
+    if (isLoading) return <progress className="progress w-56"></progress>
+
+
+    console.log(FeedbackData)
 
     return (
         <div>
@@ -20,15 +34,12 @@ const MyProject = () => {
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <div className="menu p-4 w-80 h-full bg-base-200 text-base-content">
                         <div className="text-center mb-10">
-                        <h1 className="uppercase text-2xl font-sans mb-2">feedback</h1>
-                        <hr />
+                            <h1 className="uppercase text-2xl font-sans mb-2">feedback</h1>
+                            <hr />
                         </div>
-                        <div className="flex items-center gap-2">
-                            <img className="w-10 h-10 rounded-full" src="https://mensline.org.au/wp-content/uploads/2020/05/Excuses-header-1024x683.jpg" alt="" />
-                            <div className="bg-white w-44 h-16 rounded-lg p-2 border shadow-lg">
-                                Good Work Keep it Up
-                            </div>
-                        </div>
+                        {
+                            FeedbackData.slice(0, 6).map(feedbackMessage => <FeedbackCard key={feedbackMessage._id} feedbackMessage={feedbackMessage} />)
+                        }
                     </div>
 
                 </div>

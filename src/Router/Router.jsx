@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
       {
         path: '/myProject',
         element: <MyProject />,
-        loader: () => fetch('http://localhost:5000/project')
+        loader: () => fetch('http://localhost:5000/feedback')
       },
     ]
   },
