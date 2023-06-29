@@ -5,24 +5,31 @@ import 'aos/dist/aos.css';
 import useAxios from '../Hooks/Axios/useAxios';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { useContext } from 'react';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 AOS.init();
 
 const ProjectCard = ({ singleCard }) => {
     // console.log(singleCard)
+    const { user } = useContext(AuthContext)
+    console.log(user)
     const [axiosSecure] = useAxios()
     const handelFeedback = (event) => {
         event.preventDefault();
         const from = event.target;
-        const message = from.feedback.value;
+        const femessage = from.feedback.value;
+
+        const message = { femessage, photoURL: user.photoURL }
+
         console.log(message)
-        axiosSecure.post('/feedback', {message})
-        .then(res => {
-            console.log(res.data)
-            if (res.data.insertedId) {
-                Swal.fire('Send Your Feedback')
-            }
-        })
-        .catch(error => console.error(error));
+        axiosSecure.post('/feedback', { message })
+            .then(res => {
+                console.log(res.data)
+                if (res.data.insertedId) {
+                    Swal.fire('Send Your Feedback')
+                }
+            })
+            .catch(error => console.error(error));
     }
 
     return (
@@ -47,8 +54,8 @@ const ProjectCard = ({ singleCard }) => {
                 </div>
 
                 <form onSubmit={handelFeedback}>
-                    <textarea className="textarea textarea-success w-full mt-5 mb-5" name='feedback' placeholder="Give me Your feedback"></textarea>
-                    <button type='submit'  className="w-80 relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-md shadow-xl group hover:ring-1 hover:ring-purple-500">
+                    <textarea className="textarea textarea-success w-full mt-5 mb-5" name='feedback' placeholder="Give me Your feedback" required></textarea>
+                    <button type='submit' className="w-80 relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-md shadow-xl group hover:ring-1 hover:ring-purple-500">
                         <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-700"></span>
                         <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
                         <span className="relative text-white">Send</span>

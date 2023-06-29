@@ -6,7 +6,7 @@ import FeedbackCard from "../FeedbackCard/FeedbackCard";
 
 const MyProject = () => {
     const FeedbackData = useLoaderData()
-    const { isLoading, data } = useQuery({
+    const { refetch, isLoading, data } = useQuery({
         queryKey: ['feedbackData'],
         queryFn: () =>
             fetch('http://localhost:5000/project').then(

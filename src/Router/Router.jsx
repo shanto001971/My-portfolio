@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import LayOut from "../LayOut/LayOut";
 import Home from "../Components/Home/Home";
 import MyProject from "../Components/MyProject/MyProject";
+import LogIn from "../Components/Login/LogIn";
+import SingUp from "../Components/SingUp/SingUp";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ export const router = createBrowserRouter([
         path: '/myProject',
         element: <MyProject />,
         loader: () => fetch('http://localhost:5000/feedback')
+      },
+      {
+        path: '/login',
+        element: <LogIn/>
+      },
+      {
+        path: '/singUp',
+        element: <SingUp/>
       },
     ]
   },
