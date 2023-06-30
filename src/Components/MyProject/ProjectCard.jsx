@@ -10,7 +10,7 @@ import { AuthContext } from '../../AuthProvider/AuthProvider';
 AOS.init();
 
 const ProjectCard = ({ singleCard }) => {
-    // console.log(singleCard)
+    console.log(singleCard)
     const { user } = useContext(AuthContext)
     console.log(user)
     const [axiosSecure] = useAxios()
@@ -19,10 +19,10 @@ const ProjectCard = ({ singleCard }) => {
         const from = event.target;
         const femessage = from.feedback.value;
 
-        const message = { femessage, photoURL: user.photoURL }
+        const message = { femessage, photoURL: user?.photoURL }
 
         console.log(message)
-        axiosSecure.post('/feedback', { message })
+        axiosSecure.post('/feedback',  message )
             .then(res => {
                 console.log(res.data)
                 if (res.data.insertedId) {
@@ -48,9 +48,10 @@ const ProjectCard = ({ singleCard }) => {
                 <p className="text-xl">Feature:</p>
                 <p className="text-xl">Implement By:</p>
                 <div className="flex items-center gap-10 mt-10">
-                    <Link className='flex items-center gap-2 link'><CgMediaLive />Live Site Demo</Link>
-                    <Link className='flex items-center gap-2 link' ><BsGithub /> GitHub Client Code</Link>
-                    <Link className='flex items-center gap-2 link'><BsGithub /> GitHub Server Code</Link>
+                    <a href={singleCard?.liveSite} className='flex items-center gap-2 link'><CgMediaLive />Live Site Demo</a>
+                    <a href={singleCard?.gitHubClient} className='flex items-center gap-2 link' ><BsGithub /> GitHub Client Code</a>
+                    <a href={singleCard?.gitHubServer} className='flex items-center gap-2 link'><BsGithub /> GitHub Server Code</a>
+                    
                 </div>
 
                 <form onSubmit={handelFeedback}>

@@ -31,10 +31,8 @@ const ContactInfo = () => {
                 className="lg:w-1/2 text-center bg-cover h-80 rounded-3xl bg-fixed bg-center bg-no-repeat">
                 <h1 className="text-4xl mt-32  p-10 ">Get in Touch <br /> <span className="text-yellow-300">Contact Me</span></h1>
             </div>
-            <div
-
-                className="lg:w-1/2 mt-20 p-10">
-                <form ref={form} onSubmit={sendEmail}>
+            <div className="lg:w-1/2 mt-20 p-10">
+                <form  ref={form} onSubmit={sendEmail}>
                     <label >Your Name</label>
                     <br />
                     <input type="text" placeholder="Name" name="user_name" className="input input-bordered input-info w-full max-w-xs" />

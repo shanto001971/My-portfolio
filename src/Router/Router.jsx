@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
       {
         path: '/myProject',
         element: <MyProject />,
-        loader: () => fetch('http://localhost:5000/feedback')
+        loader: () => fetch('https://my-portfolio-server-kohl.vercel.app/feedback')
       },
       {
         path: '/login',

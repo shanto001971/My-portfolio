@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import { useQuery } from "@tanstack/react-query";
 import FeedbackCard from "../FeedbackCard/FeedbackCard";
+import { Helmet } from "react-helmet";
 
 
 const MyProject = () => {
@@ -9,23 +10,26 @@ const MyProject = () => {
     const { refetch, isLoading, data } = useQuery({
         queryKey: ['feedbackData'],
         queryFn: () =>
-            fetch('http://localhost:5000/project').then(
+            fetch('https://my-portfolio-server-shanto001971.vercel.app/project').then(
                 (res) => res.json(),
             ),
     })
     // console.log(feedbackData)
     if (isLoading) return <progress className="progress w-56"></progress>
-
+    console.log(data)
 
     console.log(FeedbackData)
 
     return (
         <div>
+            <Helmet>
+                <title>Rakibul | Project</title>
+            </Helmet>
             <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center">
                     {/* Page content here */}
-                    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                    
                     {
                         data.map((singleCard) => <ProjectCard key={singleCard._id} singleCard={singleCard} />)
                     }
@@ -38,7 +42,7 @@ const MyProject = () => {
                             <hr />
                         </div>
                         {
-                            FeedbackData.slice(0, 6).map(feedbackMessage => <FeedbackCard key={feedbackMessage._id} feedbackMessage={feedbackMessage} />)
+                            FeedbackData?.slice(0, 6).map(feedbackMessage => <FeedbackCard key={feedbackMessage._id} feedbackMessage={feedbackMessage} />)
                         }
                     </div>
 

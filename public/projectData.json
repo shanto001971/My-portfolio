@@ -1,17 +1,26 @@
 [
-    {
-      "projectImage": "https://ibb.co/NFykZmx",
-      "projectName": "Start Your Job Feature ",
-      "duration": "3 days"
-    },
-    {
-      "projectImage": "https://ibb.co/ZVTJfrG",
-      "projectName": "Chef Hat",
-      "duration": "3 days"
-    },
-    {
-      "projectImage": "https://ibb.co/DMYWvF3",
-      "projectName": "Toy Store 3",
-      "duration": "2 days"
-    }
-  ]
+  {
+    "projectImage": "https://i.ibb.co/CwHXhMB/Slider1.png",
+    "projectName": "Start Your Job Feature ",
+    "duration": "3 days",
+    "liveSite": "https://legendary-cheesecake-0355db.netlify.app",
+    "gitHubClient": "https://github.com/shanto001971/career-hub-client.git",
+    "gitHubServer": "none"
+  },
+  {
+    "projectImage": "https://i.ibb.co/QfmcJVp/Slider2.png",
+    "projectName": "Chef Hat",
+    "duration": "3 days",
+    "liveSite": "https://make-chef.web.app",
+    "gitHubClient": "https://github.com/shanto001971/chef-hat-client-side.git",
+    "gitHubServer": "https://github.com/shanto001971/chef-hat-server-side.git"
+  },
+  {
+    "projectImage": "https://i.ibb.co/jwzfQY7/Slider3.png",
+    "projectName": "Toy Store 3",
+    "duration": "2 days",
+    "liveSite": " https://toy-market-palce.web.app",
+    "gitHubClient": "https://github.com/shanto001971/toy-marketplace-client.git",
+    "gitHubServer": "https://github.com/shanto001971/toy-marketplace-server.git"
+  }
+]
