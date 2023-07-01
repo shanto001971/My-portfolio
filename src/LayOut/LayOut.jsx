@@ -50,9 +50,7 @@ const LayOut = () => {
 
                                 <Link to='/'><li><a>Home</a></li></Link>
                                 <Link to='/myProject'><li><a>MY Project</a></li></Link>
-                                <Link to='/'><li><a>Services</a></li></Link>
-                                <Link to='/'><li><a>Portfolio</a></li></Link>
-                                <Link to='/'><li><a>Contact</a></li></Link>
+                                <Link to='/contact'><li><a>Contact</a></li></Link>
                             </ul>
                             {
                                 user ? <Link>
@@ -80,9 +78,7 @@ const LayOut = () => {
                     <ul className="menu p-4 w-80 h-full bg-base-200">
                         <Link to='/'><li><a>Home</a></li></Link>
                         <Link to='/myProject'><li><a>MY Project</a></li></Link>
-                        <Link to='/'><li><a>Services</a></li></Link>
-                        <Link to='/'><li><a>Portfolio</a></li></Link>
-                        <Link to='/'><li><a>Contact</a></li></Link>
+                        <Link to='/contact'><li><a>Contact</a></li></Link>
                     </ul>
 
                 </div>

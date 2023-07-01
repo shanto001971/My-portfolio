@@ -6,7 +6,7 @@ const SkillSection = () => {
 
 
     return (
-        <div className="lg:flex justify-around mt-20">
+        <div className="lg:flex justify-around mt-20 relative">
             <div className="p-10">
                 <h1 className="text-4xl font-serif">Work for All These <br /> <span className="text-amber-400 text-4xl font-serif">Brand & Clients</span></h1>
                 <p className="mt-10 mb-9">I have completed a web development course from Programming Hero platform. <br /> I have extensive
@@ -19,10 +19,10 @@ const SkillSection = () => {
                 </button>
             </div>
 
-            <div className="relative p-2">
-                <img className="lg:w-full rotate-10 absolute right-5" src="https://i.ibb.co/KG8VbCb/Vector2.png" alt="" />
+            <div className=" relative p-2">
+                <img className="w-96  lg:w-full  rotate-10 absolute lg:right-5 left-0" src="https://i.ibb.co/KG8VbCb/Vector2.png" alt="" />
                 <img className="lg:w-full " src="https://i.ibb.co/hcghJSj/Vector1.png" alt="" />
-                <div className="w-72 h-72 bg-slate-100 rounded-full absolute top-24 left-10">
+                <div className="w-72 h-72 bg-slate-100 rounded-full absolute top-24 lg:left-40">
                     <img
                         data-aos="fade-left"
                         data-aos-offset="200"
