@@ -64,11 +64,11 @@ const Banner = () => {
 
                 </div>
             </div>
-            <div className="lg:w-1/2 relative mt-44">
+            <div className="lg:w-1/2 relative mt-52 lg:mt-20">
                 <div className="w-full h-screen">
                     <img className='absolute  right-4' src="https://i.ibb.co/hcghJSj/Vector1.png" alt="" />
                     <img className='absolute right-4' src="https://i.ibb.co/KG8VbCb/Vector2.png" alt="" />
-                    <img className='absolute -top-56 lg:absolute lg:-top-20 lg:h-full  ' src="https://i.ibb.co/VQPV860/Screenshot-2023-0630-225619-removebg-preview.png" alt="" />
+                    <img className='absolute  -top-60 lg:absolute lg:-top-20 lg:h-full  ' src="https://i.ibb.co/VQPV860/Screenshot-2023-0630-225619-removebg-preview.png" alt="" />
                 </div>
                 <img 
                data-aos="zoom-in-right"

@@ -23,7 +23,7 @@ const ContactInfo = () => {
     };
 
     return (
-        <div className="lg:flex items-center justify-around mt-32 ">
+        <div  className="lg:flex items-center justify-around mt-32 ">
             <div
                 style={{
                     backgroundImage: `url("https://www.dreamhost.com/blog/wp-content/uploads/2023/02/The-Perfect-Contact-Us-Page-Feature-730x485.jpg")`
@@ -31,7 +31,7 @@ const ContactInfo = () => {
                 className="lg:w-1/2 w-96 mx-auto text-center bg-cover h-80 rounded-3xl bg-fixed bg-center bg-no-repeat">
                 <h1 className="text-4xl mt-32  p-10 ">Get in Touch <br /> <span className="text-yellow-300">Contact Me</span></h1>
             </div>
-            <div className="lg:w-1/2 mt-20 p-10">
+            <div id='about' className="lg:w-1/2 mt-20 p-10">
                 <form  ref={form} onSubmit={sendEmail}>
                     <label >Your Name</label>
                     <br />

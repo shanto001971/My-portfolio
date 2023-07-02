@@ -4,7 +4,7 @@ import Home from "../Components/Home/Home";
 import MyProject from "../Components/MyProject/MyProject";
 import LogIn from "../Components/Login/LogIn";
 import SingUp from "../Components/SingUp/SingUp";
-import ContactPage from "../Components/ContactPage/ContactPage";
+
 
 export const router = createBrowserRouter([
   {
@@ -28,10 +28,7 @@ export const router = createBrowserRouter([
         path: '/singUp',
         element: <SingUp/>
       },
-      {
-        path: '/contact',
-        element: <ContactPage/>
-      },
+     
     ]
   },
 ]);

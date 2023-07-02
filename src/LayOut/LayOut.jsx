@@ -29,7 +29,7 @@ const LayOut = () => {
     }
 
     return (
-        <div data-theme={localTheme === 'light' ? 'light' : 'dark'}>
+        <div data-theme={localTheme === 'light' ? 'light' : 'dark'} >
             <div className="drawer">
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
@@ -49,8 +49,9 @@ const LayOut = () => {
                             <ul className="menu menu-horizontal">
 
                                 <Link to='/'><li><a>Home</a></li></Link>
+                                <li><a href="/#about">Contact</a></li>
                                 <Link to='/myProject'><li><a>MY Project</a></li></Link>
-                                <Link to='/contact'><li><a>Contact</a></li></Link>
+                                
                             </ul>
                             {
                                 user ? <Link>
@@ -77,8 +78,18 @@ const LayOut = () => {
                     <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80 h-full bg-base-200">
                         <Link to='/'><li><a>Home</a></li></Link>
+                        <li><a href="/#about">Contact</a></li>
                         <Link to='/myProject'><li><a>MY Project</a></li></Link>
-                        <Link to='/contact'><li><a>Contact</a></li></Link>
+                        
+                        {
+                            user ? <Link>
+                                <li onClick={() => handelLogOut()} >LogOut</li>
+                            </Link> 
+                            : 
+                            <Link to='/login'>
+                                <li><a href="">LogIn</a></li>
+                            </Link>
+                        }
                     </ul>
 
                 </div>

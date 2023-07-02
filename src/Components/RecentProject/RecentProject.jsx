@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const RecentProject = () => {
     return (
-        <div className="lg:mt-44 mt-40 sm:w-96 lg:w-full">
+        <div className="lg:mt-44 mt-40 w-96 lg:w-full">
             <div className="text-center">
                 <h1 className="text-4xl font-serif">Recent Project</h1>
                 <p className="text-2xl font-sans">I have completed several projects, some of which are shown</p>

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 
@@ -61,6 +61,7 @@ const SingUp = () => {
                             <div className="form-control mt-6">
                                 <button type="submit" className="btn btn-primary">Login</button>
                             </div>
+                            <p>Already have an account <Link className="link" to='/login'>LogIn</Link></p>
                         </form>
                     </div>
                 </div>
