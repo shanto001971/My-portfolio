@@ -4,12 +4,14 @@ import Home from "../Components/Home/Home";
 import MyProject from "../Components/MyProject/MyProject";
 import LogIn from "../Components/Login/LogIn";
 import SingUp from "../Components/SingUp/SingUp";
+import ErrElement from "../Components/ErrElement/ErrElement";
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <LayOut />,
+    errorElement: <ErrElement />,
     children: [
       {
         path: '/',
@@ -22,13 +24,13 @@ export const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <LogIn/>
+        element: <LogIn />
       },
       {
         path: '/singUp',
-        element: <SingUp/>
+        element: <SingUp />
       },
-     
+
     ]
   },
 ]);

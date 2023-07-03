@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 
 
 const SingUp = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
     const { LogInUser, updateprofileUser } = useContext(AuthContext)
     const navigate = useNavigate()
     const handelSingUp = (data) => {
