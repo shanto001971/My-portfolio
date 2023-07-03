@@ -3,7 +3,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const FeedbackCard = ({ feedbackMessage }) => {
-    console.log(feedbackMessage)
+    // console.log(feedbackMessage)
     const {user}=useContext(AuthContext)
     // console.log(user)
     return (

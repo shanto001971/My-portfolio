@@ -45,6 +45,7 @@ const ProjectCard = ({ singleCard }) => {
                 <img className="rounded-md border" src={singleCard.projectImage} alt="" />
                 <h1 className="text-2xl mt-5">Web SiteName: {singleCard.projectName}</h1>
                 <p className="text-xl">Duration: {singleCard?.duration}</p>
+                <p>Description : {singleCard?.description}</p>
                 <div className="flex items-center gap-10 mt-10">
                     <a href={singleCard?.liveSite} className='flex items-center gap-2 link'><CgMediaLive />Live Site Demo</a>
                     <a href={singleCard?.gitHubClient} className='flex items-center gap-2 link' ><BsGithub /> GitHub Client Code</a>

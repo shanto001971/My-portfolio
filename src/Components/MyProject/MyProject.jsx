@@ -18,7 +18,7 @@ const MyProject = () => {
     if (isLoading) return <progress className="progress w-56"></progress>
     console.log(data)
 
-    console.log(FeedbackData)
+    // console.log(FeedbackData)
 
     return (
         <div>
