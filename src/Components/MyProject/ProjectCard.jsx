@@ -3,16 +3,16 @@ import { BsGithub } from 'react-icons/Bs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import useAxios from '../Hooks/Axios/useAxios';
-import { Link } from 'react-router-dom';
+
 import Swal from 'sweetalert2';
 import { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 AOS.init();
 
 const ProjectCard = ({ singleCard }) => {
-    console.log(singleCard)
+    // console.log(singleCard)
     const { user } = useContext(AuthContext)
-    console.log(user)
+    // console.log(user)
     const [axiosSecure] = useAxios()
     const handelFeedback = (event) => {
         event.preventDefault();
@@ -21,7 +21,7 @@ const ProjectCard = ({ singleCard }) => {
 
         const message = { femessage, photoURL: user?.photoURL }
 
-        console.log(message)
+        
         axiosSecure.post('/feedback',  message )
             .then(res => {
                 console.log(res.data)

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { useQuery } from "@tanstack/react-query";
 import FeedbackCard from "../FeedbackCard/FeedbackCard";
 import { Helmet } from "react-helmet";
-
+import './Spiner.css'
 
 const MyProject = () => {
     const FeedbackData = useLoaderData()
@@ -15,7 +15,7 @@ const MyProject = () => {
             ),
     })
     // console.log(feedbackData)
-    if (isLoading) return <progress className="progress w-56"></progress>
+    if (isLoading) return <div className="custom-loader mx-auto"></div>
     console.log(data)
 
     // console.log(FeedbackData)
